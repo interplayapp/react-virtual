@@ -58,6 +58,7 @@ declare function useVirtual<T>(options: Options<T>): {
   scrollToOffset: (index: number, options?: ScrollToOffsetOptions) => void
   scrollToIndex: (index: number, options?: ScrollToIndexOptions) => void
   measure: () => void
+  setItemMeasure: (key: string, size: number) => void
 }
 
 export { defaultRangeExtractor, useVirtual }
